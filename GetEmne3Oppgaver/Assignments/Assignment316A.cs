@@ -9,29 +9,47 @@ public class Assignment316A
         var filename = "ordliste.txt";
         var words = File.ReadAllLines(filename);
         var filteredWords = getList(words);
-        Console.WriteLine(getRandomWord(filteredWords));
+        for (int i = 0; i < 200; i++)
+        {
+            Console.WriteLine(createRiddle(filteredWords));
+            if (createRiddle(filteredWords) == " ")
+            {
+                i--;
+            }
+        }
+        
+    }
+
+    //Data testing Function
+    public void iterateThroughList(string[] words)
+    {
+        foreach (var word in words.Take(200))
+        {
+            Console.WriteLine(word);
+        }
     }
 
     public string getRandomWord(string[] words)
     {
-        return words[Random.Next(0, words.Length)];
+        var randomWord = words[Random.Next(0, words.Length)];
+        return randomWord;
     }
 
-    public void getWord(string[] words)
+    public string createRiddle(string[] words)
     {
-        string lastWord = "";
-
+        var randomFirstWord = getRandomWord(words);
+        var lastPartOfWord = randomFirstWord.Substring(randomFirstWord.Length - 3);
+        var riddleList = new List<string>();
+        
         foreach (var word in words)
         {
-            var splitWord = word.Split('\t');
-            string printedWord = splitWord[1];
-
-            if (printedWord != lastWord)
+            if (lastPartOfWord == word.Substring(0, 3))
             {
-                Console.Write(" " + printedWord + " ");
+                return randomFirstWord + " " + lastPartOfWord + " " + word; 
             }
-            lastWord = printedWord;
         }
+
+        return "";
     }
     
     public string[] getList(string[] words)
