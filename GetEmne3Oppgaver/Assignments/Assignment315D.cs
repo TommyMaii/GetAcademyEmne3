@@ -4,7 +4,7 @@ public class Assignment315D
 {
     static string[] vowelList = ["a", "e", "i", "o", "u", "y", "æ", "ø" , "å"];
     
-    public static void Main(string[] args)
+    public static void Run()
     {
         Console.Write("Skriv en tekst! Så teller jeg ordene ");
         string input = Console.ReadLine().ToLower();

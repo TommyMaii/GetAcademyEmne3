@@ -2,7 +2,7 @@
 
 public class Assignment315A
 {
-    public static void Main(string[] args)
+    public void Run()
     {
         var random = new Random();
         var number = random.Next(1, 100);

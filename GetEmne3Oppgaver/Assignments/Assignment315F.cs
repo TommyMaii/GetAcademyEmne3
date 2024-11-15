@@ -4,7 +4,7 @@ public class Assignment315F
 {
     public static int[] numbers = [1, 2, 3, 4, 0, 5, 6, 7, 8];
     
-    public static void Main(string[] args)
+    public static void Run()
     {
         Console.WriteLine($"{numbers[0] + " " + numbers[1] + " " + numbers[2]}");
         Console.WriteLine($"{numbers[3] + " " +  numbers[4] + " " + numbers[5]}");

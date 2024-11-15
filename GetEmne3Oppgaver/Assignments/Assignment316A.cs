@@ -4,7 +4,7 @@ public class Assignment316A
 {
     public static readonly Random Random = new Random();
     
-    public  void Main(string[] args)
+    public  void Run()
     {
         var filename = "ordliste.txt";
         var words = File.ReadAllLines(filename);

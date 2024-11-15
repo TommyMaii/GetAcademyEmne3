@@ -2,7 +2,7 @@
 
 public class Assignment315E
 {
-    public static void Main(string[] args)
+    public static void Run()
     {
         var numbers = returnNumbers(1000, 2000, 7);
         for (int i = 0; i < numbers.Length; i++)

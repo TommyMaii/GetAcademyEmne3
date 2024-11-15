@@ -9,7 +9,7 @@ public class Assignment315I
         return (char)Random.Next(min, max);
     }
     
-    static void Main(string[] args)
+    static void Run(string[] args)
     {
         if (!IsValid(args[0], args[1]))
         {

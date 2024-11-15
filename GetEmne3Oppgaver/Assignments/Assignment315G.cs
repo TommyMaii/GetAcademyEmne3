@@ -2,7 +2,7 @@
 
 public class Assignment315G
 {
-    static void Main(string[] arguments)
+    static void Run()
     {
         var range = 250;
         var counts = new int[range];

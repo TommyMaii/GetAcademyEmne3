@@ -2,7 +2,7 @@
 
 public class Assignment315H
 {
-    static void Main(string[] arguments)
+    static void Run()
     {
         string text = "something";
         while (!string.IsNullOrWhiteSpace(text))

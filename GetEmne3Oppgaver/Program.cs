@@ -3,7 +3,7 @@
 using Emne3GetAcademyOppgaver.Assignments;
 
 // Assignment315A assignment315A = new Assignment315A();
-//
+// assignment315A.Run();
 // Assignment315C assignment315C = new Assignment315C();
 //
 // Assignment315D assignment315D = new Assignment315D();
@@ -18,6 +18,4 @@ using Emne3GetAcademyOppgaver.Assignments;
 //
 // Assignment315I assignment315I = new Assignment315I();
 
-Assignment316A assignment = new Assignment316A();
-string[] hei = ["hei"];
-assignment.Main(hei);
+// Assignment316A assignment = new Assignment316A();

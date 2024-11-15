@@ -2,7 +2,7 @@
 
 public class Assignment315C
 {
-        public static void Main(string[] args)
+        public static void Run()
         {
         
             Console.WriteLine(reverseText("Terje"));
