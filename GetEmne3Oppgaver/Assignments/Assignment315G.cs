@@ -1,8 +1,10 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿using GetEmne3Oppgaver;
 
-public class Assignment315G
+namespace Emne3GetAcademyOppgaver.Assignments;
+
+public class Assignment315G : IAssignment
 {
-    static void Run()
+    public void Run()
     {
         var range = 250;
         var counts = new int[range];

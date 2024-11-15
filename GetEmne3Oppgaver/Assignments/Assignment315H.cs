@@ -1,8 +1,10 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿using GetEmne3Oppgaver;
 
-public class Assignment315H
+namespace Emne3GetAcademyOppgaver.Assignments;
+
+public class Assignment315H : IAssignment
 {
-    static void Run()
+    public void Run()
     {
         string text = "something";
         while (!string.IsNullOrWhiteSpace(text))

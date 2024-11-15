@@ -1,10 +1,12 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿using GetEmne3Oppgaver;
 
-public class Assignment315F
+namespace Emne3GetAcademyOppgaver.Assignments;
+
+public class Assignment315F : IAssignment
 {
     public static int[] numbers = [1, 2, 3, 4, 0, 5, 6, 7, 8];
     
-    public static void Run()
+    public void Run()
     {
         Console.WriteLine($"{numbers[0] + " " + numbers[1] + " " + numbers[2]}");
         Console.WriteLine($"{numbers[3] + " " +  numbers[4] + " " + numbers[5]}");

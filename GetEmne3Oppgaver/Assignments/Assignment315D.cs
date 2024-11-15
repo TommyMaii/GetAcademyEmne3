@@ -1,10 +1,12 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿using GetEmne3Oppgaver;
 
-public class Assignment315D
+namespace Emne3GetAcademyOppgaver.Assignments;
+
+public class Assignment315D : IAssignment
 {
     static string[] vowelList = ["a", "e", "i", "o", "u", "y", "æ", "ø" , "å"];
     
-    public static void Run()
+    public void Run()
     {
         Console.Write("Skriv en tekst! Så teller jeg ordene ");
         string input = Console.ReadLine().ToLower();

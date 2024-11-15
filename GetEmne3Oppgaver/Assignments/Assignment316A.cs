@@ -1,10 +1,12 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿using GetEmne3Oppgaver;
 
-public class Assignment316A
+namespace Emne3GetAcademyOppgaver.Assignments;
+
+public class Assignment316A : IAssignment
 {
     public static readonly Random Random = new Random();
     
-    public  void Run()
+    public void Run() 
     {
         var filename = "ordliste.txt";
         var words = File.ReadAllLines(filename);

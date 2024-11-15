@@ -1,6 +1,6 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿namespace GetEmne3Oppgaver.Assignments.Assignment315I;
 
-public class Assignment315I
+public class Assignment315I 
 {
      static readonly Random Random = new Random();
     
@@ -9,7 +9,7 @@ public class Assignment315I
         return (char)Random.Next(min, max);
     }
     
-    static void Run(string[] args)
+    public void Run(string[] args)
     {
         if (!IsValid(args[0], args[1]))
         {

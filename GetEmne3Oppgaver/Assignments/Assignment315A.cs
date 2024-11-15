@@ -1,19 +1,21 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿using GetEmne3Oppgaver;
 
-public class Assignment315A
+namespace Emne3GetAcademyOppgaver.Assignments;
+
+public class Assignment315A : IAssignment
 {
     public void Run()
     {
         var random = new Random();
         var number = random.Next(1, 100);
-        bool guessed = false;
-        int counter = 0;
+        var guessed = false;
+        var guessAttempts = 0;
 
         while (!guessed)
         {
             Console.WriteLine("Gjett nummeret!");
             int guessedNumber = int.Parse(Console.ReadLine());
-            counter++;
+            guessAttempts++;
 
             if (number > guessedNumber)
             {
@@ -26,7 +28,7 @@ public class Assignment315A
             else if (number == guessedNumber)
             {
                 guessed = true;
-                Console.WriteLine($"Gratulerer! Du brukte {counter} forsøk");
+                Console.WriteLine($"Gratulerer! Du brukte {guessAttempts} forsøk");
             }
 
         }

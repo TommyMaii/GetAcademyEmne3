@@ -1,8 +1,10 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿using GetEmne3Oppgaver;
 
-public class Assignment315C
+namespace Emne3GetAcademyOppgaver.Assignments;
+
+public class Assignment315C : IAssignment
 {
-        public static void Run()
+        public void Run()
         {
         
             Console.WriteLine(reverseText("Terje"));
@@ -10,9 +12,12 @@ public class Assignment315C
     
         static string reverseText(string text)
         {
-            char[] splitText = text.ToCharArray();
-            Array.Reverse(splitText);
-            return new string(splitText);
+            var characters = text.ToCharArray().Reverse();
+            return new string(characters.ToArray());
+            
+            // var characters = text.ToCharArray();
+            // Array.Reverse(characters);
+            // return new string(characters);
         }
 }
 

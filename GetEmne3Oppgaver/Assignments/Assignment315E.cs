@@ -1,8 +1,10 @@
-﻿namespace Emne3GetAcademyOppgaver.Assignments;
+﻿using GetEmne3Oppgaver;
 
-public class Assignment315E
+namespace Emne3GetAcademyOppgaver.Assignments;
+
+public class Assignment315E : IAssignment
 {
-    public static void Run()
+    public void Run() 
     {
         var numbers = returnNumbers(1000, 2000, 7);
         for (int i = 0; i < numbers.Length; i++)
