@@ -3,10 +3,11 @@
 using Emne3GetAcademyOppgaver.Assignments;
 using Emne3GetAcademyOppgaver.Assignments.Assignment321;
 using Emne3GetAcademyOppgaver.Assignments.Assignment321B;
+using Emne3GetAcademyOppgaver.Assignments.Assignment323A;
+using Emne3GetAcademyOppgaver.Assignments.Assignment323B;
+using Emne3GetAcademyOppgaver.Assignments.Assignment323C;
 using GetEmne3Oppgaver;
 using GetEmne3Oppgaver.Assignments.Assignment321C;
 
-IAssignment assignmentToRun;
-assignmentToRun = new Assignment321C();
+var assignmentToRun = new Assignment323C();
 assignmentToRun.Run();
-
