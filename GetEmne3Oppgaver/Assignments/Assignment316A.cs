@@ -8,13 +8,13 @@ public class Assignment316A : IAssignment
     
     public void Run() 
     {
-        var filename = "ordliste.txt";
+        const string filename = "ordliste.txt";
         var words = File.ReadAllLines(filename);
         var filteredWords = getList(words);
-        for (int i = 0; i < 200; i++)
+        for (var i = 0; i < 200; i++)
         {
-            Console.WriteLine(createRiddle(filteredWords));
-            if (createRiddle(filteredWords) == " ")
+            Console.WriteLine(CreateRiddle(filteredWords));
+            if (CreateRiddle(filteredWords) == " ")
             {
                 i--;
             }
@@ -31,15 +31,15 @@ public class Assignment316A : IAssignment
         }
     }
 
-    public string getRandomWord(string[] words)
+    public string GetRandomWord(string[] words)
     {
         var randomWord = words[Random.Next(0, words.Length)];
         return randomWord;
     }
 
-    public string createRiddle(string[] words)
+    public string CreateRiddle(string[] words)
     {
-        var randomFirstWord = getRandomWord(words);
+        var randomFirstWord = GetRandomWord(words);
         var lastPartOfWord = randomFirstWord.Substring(randomFirstWord.Length - 3);
         var riddleList = new List<string>();
         
