@@ -1,0 +1,11 @@
+﻿@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+User -> Program: Run()
+Program -> Bets: twelveMatches.CreateMatches(Bets)
+group WhileLoop 
+Bets --> BetResults: twelveMatches.getCorrectCount 
+end
+@enduml

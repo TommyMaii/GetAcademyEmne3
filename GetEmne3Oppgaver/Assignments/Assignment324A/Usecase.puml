@@ -1,0 +1,10 @@
+﻿@startuml
+'https://plantuml.com/use-case-diagram
+actor User
+
+User -down- (Start Program)
+
+(Start Program) .. (Bet on games)
+(Bet on games) .. (View game and betting results)
+
+@enduml

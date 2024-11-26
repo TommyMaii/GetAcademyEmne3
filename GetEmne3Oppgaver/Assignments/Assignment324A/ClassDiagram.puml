@@ -1,0 +1,19 @@
+﻿@startuml
+'https://plantuml.com/class-diagram
+
+class Match {
+homeGoals
+awayGoals
+bet
+matchIsRunning
+}
+
+class TwelveMatches {
+Match
+CorrectBetCount
+}
+
+Match - TwelveMatches
+
+
+@enduml
